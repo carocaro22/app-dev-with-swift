@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hello" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cat" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W7v-AS-wES">
+                                <rect key="frame" x="24" y="130.5" width="366" height="210"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="366" id="90X-Gv-x4o"/>
+                                    <constraint firstAttribute="height" constant="210" id="N7S-01-OLY"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CAROLINA NOBRE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cyv-hJ-gdS">
+                                <rect key="frame" x="74" y="68" width="266" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idS-PR-KQ7">
+                                <rect key="frame" x="24" y="364.5" width="366" height="263"/>
+                                <string key="text">I am Carolina from Brazil, Electronical engineering student in germany at the University of applied Sciences Mittweida. Since we have corona a day in my life consists in staying home working for some personal projects like this one. Or maybe doing some University Stuff. If I have money I would probably travel the whole world. My favorite things in my life are my Cat, my Boyfriend and ice cream on hot summer days.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="W7v-AS-wES" secondAttribute="trailing" constant="24" id="5wh-n5-ANz"/>
+                            <constraint firstItem="idS-PR-KQ7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OYY-M1-vOC"/>
+                            <constraint firstItem="idS-PR-KQ7" firstAttribute="top" secondItem="W7v-AS-wES" secondAttribute="bottom" constant="24" id="hq1-Kn-9BY"/>
+                            <constraint firstItem="W7v-AS-wES" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="24" id="jnv-ei-MBw"/>
+                            <constraint firstItem="idS-PR-KQ7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="24" id="lIe-Ki-CLW"/>
+                            <constraint firstItem="Cyv-hJ-gdS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="ols-Gq-JHD"/>
+                            <constraint firstAttribute="trailing" secondItem="idS-PR-KQ7" secondAttribute="trailing" constant="24" id="uP4-CO-1Kv"/>
+                            <constraint firstItem="W7v-AS-wES" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uay-ZL-UjA"/>
+                            <constraint firstItem="Cyv-hJ-gdS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="utI-nr-MSa"/>
+                            <constraint firstItem="W7v-AS-wES" firstAttribute="top" secondItem="Cyv-hJ-gdS" secondAttribute="bottom" constant="24" id="zXY-pw-Li2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Cat" width="976" height="549"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

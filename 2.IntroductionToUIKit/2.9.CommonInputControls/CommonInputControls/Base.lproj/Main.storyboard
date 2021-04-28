@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CommonInputControls" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xgB-oz-hzA">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="191"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hcb-if-Fsf">
+                                        <rect key="frame" x="131" y="0.0" width="59" height="32"/>
+                                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="tintColor" systemColor="systemPinkColor"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleShadowColor" systemColor="systemPinkColor"/>
+                                        </state>
+                                    </button>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="top" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4T5-fO-eG1">
+                                        <rect key="frame" x="135.5" y="56" width="51" height="31"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                        <connections>
+                                            <action selector="switchToggled:" destination="BYZ-38-t0r" eventType="valueChanged" id="uot-vZ-B8o"/>
+                                        </connections>
+                                    </switch>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="bpd-Fp-jFA">
+                                        <rect key="frame" x="-2" y="107" width="324" height="31"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <connections>
+                                            <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="MaQ-Qf-84F"/>
+                                        </connections>
+                                    </slider>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N5t-IK-udQ">
+                                        <rect key="frame" x="144" y="157" width="32" height="34"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="keyboardReturnKeyTapped:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="xpj-vP-SgR"/>
+                                            <action selector="textChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="lpX-2K-QxD"/>
+                                            <action selector="textcHANGED:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="kC5-qL-HMQ"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="xgB-oz-hzA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mOR-AD-Dzs"/>
+                            <constraint firstAttribute="trailing" secondItem="xgB-oz-hzA" secondAttribute="trailing" id="pwm-VV-1Fe"/>
+                            <constraint firstItem="xgB-oz-hzA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="uLD-vQ-Uv6"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="rsr-Tf-DXL" appends="YES" id="2g0-O0-gnx"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="Hcb-if-Fsf" id="6YA-v6-rwq"/>
+                        <outlet property="slider" destination="bpd-Fp-jFA" id="XSt-gt-IAQ"/>
+                        <outlet property="toogle" destination="4T5-fO-eG1" id="1gM-7b-cnK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="rsr-Tf-DXL">
+                    <connections>
+                        <action selector="respondToTapGesture:" destination="BYZ-38-t0r" id="8j0-cm-Kax"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="33.75" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
