@@ -294,7 +294,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
 ## Table Views
 ### Table View Data Source
 #### Number of Sections 
-In the number of sections you return as an Int the number of sectionsyou wish the table view to display
+In the number of sections you return as an Int the number of sections you wish the table view to display
 ```
   optional func numberOfSections(in tableView: UITableView) -> Int 
   
