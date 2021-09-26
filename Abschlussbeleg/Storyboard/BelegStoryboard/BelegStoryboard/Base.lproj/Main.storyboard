@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hnb-B4-uQN">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Kodinerds freeTV Announcement Service -->
+        <scene sceneID="03P-o4-ixe">
+            <objects>
+                <tableViewController id="vXU-Yv-Zih" customClass="ProgramTableViewController" customModule="BelegStoryboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="5nf-Ih-3fc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="programCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="programCell" id="eru-Ty-Eru" userLabel="programCell" customClass="ProgramTableViewCell" customModule="BelegStoryboard" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="562"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eru-Ty-Eru" id="H0n-Be-XrS">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="562"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Gwl-kg-Dy3">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="552"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="image" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i1N-Fy-Wa1">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="233"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="i1N-Fy-Wa1" secondAttribute="height" multiplier="414:233" id="Qps-ta-1Dh"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Di., 25.05.2021 22:40 auf NITRO HD: Jean-Claude van Damme: Tötet sie! (105 min)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNT-iK-TVB">
+                                                    <rect key="frame" x="0.0" y="241" width="414" height="54.5"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="weitere Sendetermine: 25.05.2021 20:40, 26.05.2021 21:20" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hW-xw-7Bg">
+                                                    <rect key="frame" x="0.0" y="303.5" width="414" height="49"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QVi-OW-YaV">
+                                                    <rect key="frame" x="0.0" y="360.5" width="414" height="122"/>
+                                                    <string key="text">(US) 2017 
+Nach einem Feuergefecht wird ein Unbekannter mit schweren Schussverletzungen ins Krankenhaus eingeliefert, welches daraufhin von einer internationalen Gang gestürmt wird. Der Fremde wird vom Gejagten zum Jäger. Sein Ziel: Kill'em All.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kMh-Wf-2kl">
+                                                    <rect key="frame" x="0.0" y="490.5" width="414" height="61.5"/>
+                                                    <string key="text">IMDb: k.A.
+Genre: Abenteuer / Western / Krieg
+Empfohlen von: PvD</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Gwl-kg-Dy3" firstAttribute="top" secondItem="H0n-Be-XrS" secondAttribute="top" id="ChH-rx-MvM"/>
+                                        <constraint firstAttribute="bottom" secondItem="Gwl-kg-Dy3" secondAttribute="bottom" constant="10" id="LGy-9v-jhz"/>
+                                        <constraint firstItem="Gwl-kg-Dy3" firstAttribute="leading" secondItem="H0n-Be-XrS" secondAttribute="leading" id="j4d-PV-6WX"/>
+                                        <constraint firstAttribute="trailing" secondItem="Gwl-kg-Dy3" secondAttribute="trailing" id="kwm-J0-hE6"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="details" destination="kMh-Wf-2kl" id="TCc-bs-4RS"/>
+                                    <outlet property="programDescription" destination="QVi-OW-YaV" id="7uU-I9-Laa"/>
+                                    <outlet property="programImage" destination="i1N-Fy-Wa1" id="EE2-KR-WdS"/>
+                                    <outlet property="subtitle" destination="3hW-xw-7Bg" id="FfA-y9-WLZ"/>
+                                    <outlet property="title" destination="FNT-iK-TVB" id="jqB-PR-f5p"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="vXU-Yv-Zih" id="aIb-bI-nME"/>
+                            <outlet property="delegate" destination="vXU-Yv-Zih" id="ga7-uh-hiW"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Kodinerds freeTV Announcement Service " id="Yac-yu-tKG"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mF1-SV-NSK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="963.75" y="87.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8gW-ce-iKa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Hnb-B4-uQN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gW9-yk-aMB">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXU-Yv-Zih" kind="relationship" relationship="rootViewController" id="nRo-Wk-PI1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e7u-6m-6wl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-33.75" y="87.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="image" width="1280" height="720"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
